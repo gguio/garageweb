@@ -91,6 +91,76 @@ const Estimator = ({
         }
     }, [currValue]);
 
+    useEffect(() => {
+        const keyDownHandler = (event: KeyboardEvent) => {
+            if (event.key === "1") {
+                event.preventDefault();
+
+                const value = 1;
+                const width = (contRef.current as any).offsetWidth - 5;
+                let offset = (value / 7) * width;
+
+                offset += 1;
+
+                setCurrValue(value);
+                setXOffset(offset);
+            } else if (event.key === "2") {
+                event.preventDefault();
+
+                const value = 2;
+                const width = (contRef.current as any).offsetWidth - 5;
+                let offset = (value / 7) * width;
+
+                offset += 1;
+
+                setCurrValue(value);
+                setXOffset(offset);
+            } else if (event.key === "3") {
+                event.preventDefault();
+
+                const value = 3;
+                const width = (contRef.current as any).offsetWidth - 5;
+                let offset = (value / 7) * width;
+
+                setCurrValue(value);
+                setXOffset(offset);
+            } else if (event.key === "4") {
+                event.preventDefault();
+
+                const value = 4;
+                const width = (contRef.current as any).offsetWidth - 5;
+                let offset = (value / 7) * width;
+
+                setCurrValue(value);
+                setXOffset(offset);
+            } else if (event.key === "5") {
+                event.preventDefault();
+
+                const value = 5;
+                const width = (contRef.current as any).offsetWidth - 5;
+                let offset = (value / 7) * width;
+
+                setCurrValue(value);
+                setXOffset(offset);
+            } else if (event.key === "6") {
+                event.preventDefault();
+
+                const value = 6;
+                const width = (contRef.current as any).offsetWidth - 5;
+                let offset = (value / 7) * width;
+
+                setCurrValue(value);
+                setXOffset(offset);
+            }
+        };
+
+        document.addEventListener("keydown", keyDownHandler);
+
+        return () => {
+            document.removeEventListener("keydown", keyDownHandler);
+        };
+    }, []);
+
     const changeOffset = (e: React.MouseEvent<HTMLDivElement>) => {
         const target = contRef.current as any;
         if (target && mousePressed) {
@@ -100,7 +170,7 @@ const Estimator = ({
             offset = (value / 7) * width;
 
             if (value == 1 || value == 2) {
-                offset += 5;
+                offset += 1;
             }
 
             if (offset < 5) {
@@ -283,6 +353,36 @@ export default function TestPage({ params }: { params: RootLayoutParams }) {
         });
         tempData.slice(1);
         setDataForTest(tempData);
+
+        const keyDownHandlerNext = (event: KeyboardEvent) => {
+            console.log("User pressed: ", event.key);
+
+            if (event.key === "Enter") {
+                event.preventDefault();
+
+                if (currValue < 0) {
+                    return;
+                }
+                setQuestNumber((prev) => prev + 1);
+                setCurrValue(-1);
+                // set value for current question
+                currData.current[questNumber].value = currValue;
+                // if last question
+                if (questNumber >= dataForTest.length - 2) {
+                    // set dataForTest
+                    setDataForTest(currData.current);
+                    // redirect to result page
+                    router.replace(`/${params.lng}/resultPage`);
+                }
+            }
+        };
+
+        document.addEventListener("keydown", keyDownHandlerNext);
+
+        return () => {
+            document.removeEventListener("keydown", keyDownHandlerNext);
+        };
+
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
@@ -304,7 +404,7 @@ export default function TestPage({ params }: { params: RootLayoutParams }) {
                     // set value for current question
                     currData.current[questNumber].value = currValue;
                     // if last question
-                    if (questNumber >= dataForTest.length - 40) {
+                    if (questNumber >= dataForTest.length - 2) {
                         // set dataForTest
                         setDataForTest(currData.current);
                         // redirect to result page
