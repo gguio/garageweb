@@ -24,7 +24,7 @@ import styles from "../../css/testPage.module.css";
 
 // components: progress bar, card, estimator
 // propgress bar
-export const ProgressBar = ({
+const ProgressBar = ({
     questNumber,
     dataLength,
 }: {

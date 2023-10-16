@@ -21,7 +21,6 @@ import { CountResults } from "../components/CountResults/CountResults";
 import { gsap } from "gsap";
 import { ReactSVG } from "react-svg";
 
-import { ProgressBar } from "../testPage/page";
 import Button from "@/app/[lng]/components/Button";
 
 import styles from "@/app/css/resultPage.module.css";
@@ -37,6 +36,25 @@ import Philosophy from "@/public/resultPage/philosophy.svg";
 import SadFace from "@/public/resultPage/sad_face.svg";
 import HappyFace from "@/public/resultPage/happy_face.svg";
 import { RootLayoutParams } from "../layout";
+
+const ProgressBar = ({
+    questNumber,
+    dataLength,
+}: {
+    questNumber: number;
+    dataLength: number;
+}) => {
+    const width = (questNumber / dataLength) * 100;
+
+    return (
+        <div className={styles.progressBar}>
+            <div
+                className={styles.progressBar__inner}
+                style={{ width: `${width}%` }}
+            ></div>
+        </div>
+    );
+};
 
 export default function ResultPage({ params }: { params: RootLayoutParams }) {
     // global state : dataForTest, resultPage
