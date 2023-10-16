@@ -31,7 +31,7 @@ import Book from "@/public/resultPage/book.svg";
 import Communication from "@/public/resultPage/communication.svg";
 import Diamond from "@/public/resultPage/diamond.svg";
 import Explorer from "@/public/resultPage/explorer.svg";
-import Music from "@/public/resultPage/Music.svg";
+import Music from "@/public/resultPage/music.svg";
 import Nature from "@/public/resultPage/nature.svg";
 import Philosophy from "@/public/resultPage/philosophy.svg";
 import SadFace from "@/public/resultPage/sad_face.svg";
