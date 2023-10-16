@@ -1,0 +1,95 @@
+{
+    "title": "Tu resultado",
+
+    "rarity": "% - muy raramente",
+
+    "card__title": "Explorador",
+
+    "doYouAgree": "¿Estás de acuerdo con el resultado?",
+
+    "no": "No",
+    "yes": "Si",
+
+    "button1": "Obtener un informe completo y detallado",
+    "button2": "cursos relacionados con esta profesión",
+
+    "share": "Compartir en redes sociales",
+    "download": "Descargar al dispositivo",
+
+    "professions": "Profesiones",
+    "courses": "Cursos",
+    "categories": [
+        {
+            "type": "talento lingüístico",
+            "card__title": "Talento lingüístico",
+            "card__subtitle": "Periodista, Escritor de Cine, Escritor",
+            "description": "Tu punto fuerte es la capacidad de expresar tus pensamientos con palabras para convencer y liderar a los interlocutores o lectores, además de dominar fácilmente nuevos idiomas.",
+            "professions": "Director de teatro y cine, escritor, guionista, creador de clips, publicidad, series de televisión, redactor, periodista, presentador de televisión, bloguero, especialista en relaciones públicas, comercializador",
+            "courses": "Curso introductorio sobre realización de películas, Trabajo con texto y palabras, Creación de un guión impresionante",
+            "imgURL": "https://plus.unsplash.com/premium_photo-1663047291494-b29cb4f0df9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        },
+        {
+            "type": "habilidades lógico-matemáticas",
+            "card__title": "Explorador",
+            "card__subtitle": "Programador, Ingeniero, Científico",
+            "description": "Tu talento es la capacidad de analizar y crear orden, incluso en los conceptos más complejos.",
+            "professions": "Programador, desarrollador de juegos y aplicaciones, analista de datos, administrador de sistemas, arquitecto, diseñador gráfico, ingeniero de diseño",
+            "courses": "Introducción a la profesión de diseño de juegos, Principales lenguajes de programación, Programas para el procesamiento y edición de video",
+            "imgURL": "https://images.unsplash.com/photo-1580982181126-aefa590a41c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        },
+        {
+            "type": "talento artístico",
+            "card__title": "Artista",
+            "card__subtitle": "Diseñador, Operador, Artista",
+            "description": "Tu don es la imaginación, la capacidad de visualizar o crear imágenes, y será demandado en diversas áreas, desde el diseño de juegos hasta la industria cinematográfica, la arquitectura o el arte contemporáneo.",
+            "professions": "Artista, ilustrador, diseñador, creador de muñecos y decoraciones, profesor de arte, diseñador de ropa y calzado, arquitecto, diseñador gráfico, diseño de paisajes, productor y organizador de exposiciones, operador de video, creador de clips y películas, fotógrafo, artista fotográfico",
+            "courses": "Introducción a la profesión de diseño de juegos, Arte digital y modelado 3D, Creación de imágenes de personajes de juegos",
+            "imgURL": "https://images.unsplash.com/photo-1501084817091-a4f3d1d19e07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        },
+        {
+            "type": "habilidades musicales",
+            "card__title": "Habilidades musicales",
+            "card__subtitle": "Ingeniero de sonido, Cantante, DJ",
+            "description": "El sentido del ritmo, el oído agudo, la artística y la creatividad, todas estas cualidades te convierten en un invitado bienvenido en las fiestas y te brindan muchas oportunidades para realizarte en profesiones de moda.",
+            "professions": "DJ, arreglista, director de diseño de sonido, cantante, músico, compositor, director de orquesta, productor de música, creador de música para videojuegos, actor de doblaje, creador de efectos especiales, periodista musical, profesor de música, ingeniero de sonido, presentador de radio, presentador de televisión",
+            "courses": "Curso introductorio sobre realización de películas, Música que hace que el cine cobre vida, Carrera para músicos exitosos",
+            "imgURL": "https://images.unsplash.com/photo-1593697820910-a2b68670c1e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        },
+        {
+            "type": "genio de la comunicación",
+            "card__title": "Genio de la comunicación",
+            "card__subtitle": "Blogger, Gerente de Proyectos de Juegos, Productor de Películas",
+            "description": "Estas personas se relacionan fácilmente, encuentran intereses comunes y saben cómo convencer desde la infancia de que lo que les importa es importante.",
+            "professions": "Diplomático, figura pública, político, blogger, presentador de televisión, productor de canales de video, empresario, gerente de negocios, profesor, mentor, entrenador, orador motivador, administrador, gerente de proyectos, coordinador de exposiciones, organizador de eventos, especialista en relaciones públicas, comercializador, especialista en SMM",
+            "courses": "Curso introductorio sobre realización de películas, Introducción a la profesión de diseño de juegos, Creación de un guión impresionante",
+            "imgURL": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        },
+        {
+            "type": "talento cinestésico-corporal",
+            "card__title": "Talento cinestésico-corporal",
+            "card__subtitle": "Actor, Creador de Escenografía Artística, Director de Proyectos Cinematográficos",
+            "description": "Tu forma de expresarte en el mundo es a través del movimiento, el deporte y la danza. El contacto táctil y la estética de lo que haces son importantes para ti.",
+            "professions": "Actor, director, coreógrafo, bailarín, artista de circo, modelo fotográfico, escultor, creador de objetos artísticos, joyero, constructor, carpintero, herrero, restaurador, atleta profesional, entrenador, profesor de educación física, coreógrafo, cirujano, cosmetólogo, masajista",
+            "courses": "Curso introductorio sobre realización de películas, Trabajo con texto y palabras, Creación de imágenes de personajes de juegos",
+            "imgURL": "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3BvcnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
+        },
+        {
+            "type": "comprensión de la naturaleza",
+            "card__title": "Comprensión de la naturaleza",
+            "card__subtitle": "Ecologista, Veterinario, Zoólogo",
+            "description": "Tu fuente de fuerza e inspiración es la naturaleza, la comunicación y la observación de la flora y la fauna, la amistad con los animales, el estudio de las ciencias naturales. Serás interesante desarrollar tu carrera en estas áreas.",
+            "professions": "Biólogo, bioingeniero, farmacéutico, investigador y defensor de la resolución de problemas ambientales, oceanólogo, antropólogo, sismólogo, científico del suelo, ingeniero topográfico, arqueólogo, geógrafo, profesor de biología, agricultor, cuidador de bosques, agrónomo, criador de ganado, empleado de zoológico, veterinario, diseñador de paisajes, florista",
+            "courses": "Curso introductorio sobre realización de películas, Trabajo con texto y palabras, Arte digital y modelado 3D",
+            "imgURL": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
+        },
+        {
+            "type": "don filosófico",
+            "card__title": "Filósofo",
+            "card__subtitle": "Director de proyectos cinematográficos, Guionista, Analista de datos",
+            "description": "Eres una de esas pocas personas que desde la infancia saben reconocer y controlar las emociones, reflexionar sobre el sentido de la vida, interesarse por la religión y hablar con sensatez sobre fenómenos serios, además de sentir sutilmente tus propias experiencias y las de los demás.",
+            "professions": "Científico en ciencias sociales, historia, pedagogía, director de cine, guionista, director de teatro, psicólogo, psicoterapeuta, entrenador motivador, figura religiosa, filósofo, creador de conceptos políticos y programas de partidos políticos, profesor, mentor, periodista, escritor, investigador, jefe de proyectos de investigación",
+            "courses": "Curso introductorio sobre realización de películas, Trabajo con texto y palabras, Creación de imágenes de personajes de juegos",
+            "imgURL": "https://images.unsplash.com/photo-1620662736427-b8a198f52a4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhpbG9zb3BoeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        }
+    ]
+}

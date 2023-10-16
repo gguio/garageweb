@@ -1,0 +1,292 @@
+{
+    "es": [
+        {
+            "number": 0,
+            "text": "я хорошо пишу и легко излагаю свои мысли",
+            "type": "лингвистические таланты",
+            "imageURL": "https://images.pexels.com/photos/267669/pexels-photo-267669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        {
+            "number": 1,
+            "text": "я люблю разбираться как работают разные механизмы и процессы",
+            "type": "логико-математические способности",
+            "imageURL": "https://images.pexels.com/photos/159275/macro-focus-cogwheel-gear-159275.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 2,
+            "text": "мне легко вообразить любые образы, даже не существующие",
+            "type": "талант художника",
+            "imageURL": "https://images.pexels.com/photos/2693212/pexels-photo-2693212.png?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 3,
+            "text": "я с легкостью определяю на звук разные музыкальные инструменты",
+            "type": "музыкальные способности",
+            "imageURL": "https://images.pexels.com/photos/1943411/pexels-photo-1943411.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 4,
+            "text": "я легко знакомлюсь с новыми людьми",
+            "type": "гений коммуникаций",
+            "imageURL": "https://images.pexels.com/photos/8921545/pexels-photo-8921545.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 5,
+            "text": "мне нравится заниматься спортом и чувствовать силу своего тела",
+            "type": "телесно-кинестетический талант",
+            "imageURL": "https://images.pexels.com/photos/4348638/pexels-photo-4348638.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 6,
+            "text": "обожаю книги и фильмы про животных",
+            "type": "понимание природы",
+            "imageURL": "https://images.pexels.com/photos/3493730/pexels-photo-3493730.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 7,
+            "text": "мне легко посчитать арифметические задачи в уме",
+            "type": "логико-математические способности",
+            "imageURL": "https://images.pexels.com/photos/714699/pexels-photo-714699.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 8,
+            "text": "я отлично знаю свои сильные и слабые стороны",
+            "type": "дар философа",
+            "imageURL": "https://images.pexels.com/photos/3418814/pexels-photo-3418814.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 9,
+            "text": "я собираю фигурки и марки о животных и природе",
+            "type": "понимание природы",
+            "imageURL": "https://images.pexels.com/photos/3608263/pexels-photo-3608263.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 10,
+            "text": "легко запоминаю имена, места, даты и детали",
+            "type": "лингвистические таланты",
+            "imageURL": "https://images.pexels.com/photos/204997/pexels-photo-204997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        {
+            "number": 11,
+            "text": "мне легко представить и начертить объемные фигуры",
+            "type": "талант художника",
+            "imageURL": "https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 12,
+            "text": "мне легко повторить мелодию на слух",
+            "type": "музыкальные способности",
+            "imageURL": "https://images.pexels.com/photos/3831187/pexels-photo-3831187.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 13,
+            "text": "мне хорошо и нескучно наедине с собой",
+            "type": "дар философа",
+            "imageURL": "https://images.pexels.com/photos/6005013/pexels-photo-6005013.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 14,
+            "text": "я легко подражаю чужим жестам и движениям",
+            "type": "телесно-кинестетический талант",
+            "imageURL": "https://images.pexels.com/photos/3799761/pexels-photo-3799761.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 15,
+            "text": "мне нравится кормить и помогать животным",
+            "type": "понимание природы",
+            "imageURL": "https://images.pexels.com/photos/704454/pexels-photo-704454.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 16,
+            "text": "мои друзья часто советуются со мной по их проблемам",
+            "type": "дар философа",
+            "imageURL": "https://images.pexels.com/photos/3768146/pexels-photo-3768146.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 17,
+            "text": "я пишу свои тексты и стихи",
+            "type": "лингвистические таланты",
+            "imageURL": "https://images.pexels.com/photos/3780003/pexels-photo-3780003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        {
+            "number": 18,
+            "text": "люблю решать логические задачи",
+            "type": "логико-математические способности",
+            "imageURL": "https://images.pexels.com/photos/3768126/pexels-photo-3768126.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 19,
+            "text": "люблю разные виды искусства - живопись, архитектура, танец и другие",
+            "type": "талант художника",
+            "imageURL": "https://images.pexels.com/photos/3459713/pexels-photo-3459713.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 20,
+            "text": "могу играть на музыкальном инструменте",
+            "type": "музыкальные способности",
+            "imageURL": "https://images.pexels.com/photos/1246437/pexels-photo-1246437.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 21,
+            "text": "мне легко строить общение с любыми людьми",
+            "type": "гений коммуникаций",
+            "imageURL": "https://images.pexels.com/photos/17875554/pexels-photo-17875554/free-photo-of-black-and-white-photo-of-young-people-sitting-on-a-bench.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 22,
+            "text": "люблю читать книги и журналы",
+            "type": "лингвистические таланты",
+            "imageURL": "https://images.pexels.com/photos/5084674/pexels-photo-5084674.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 23,
+            "text": "обожаю шахматы и другие стратегические игры",
+            "type": "логико-математические способности",
+            "imageURL": "https://images.pexels.com/photos/6115019/pexels-photo-6115019.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 24,
+            "text": "часто напеваю себе под нос",
+            "type": "музыкальные способности",
+            "imageURL": "https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 25,
+            "text": "я человек, который знает чего хочет и последовательно идет к этому",
+            "type": "дар философа",
+            "imageURL": "https://images.pexels.com/photos/3779409/pexels-photo-3779409.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 26,
+            "text": "мне нравится трогать и чувствовать вещи на ощупь",
+            "type": "телесно-кинестетический талант",
+            "imageURL": "https://images.pexels.com/photos/1669605/pexels-photo-1669605.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 27,
+            "text": "мне спокойно и хорошо гулять в лесу",
+            "type": "понимание природы",
+            "imageURL": "https://images.pexels.com/photos/1083515/pexels-photo-1083515.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 28,
+            "text": "на больших тусовках я чувствую себя \"как рыба в воде\"",
+            "type": "гений коммуникаций",
+            "imageURL": "https://images.pexels.com/photos/1154189/pexels-photo-1154189.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 29,
+            "text": "обожаю снимать свои ролики и смотреть фильмы",
+            "type": "талант художника",
+            "imageURL": "https://images.pexels.com/photos/2262403/pexels-photo-2262403.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 30,
+            "text": "я защищаю то, во что верю, мне не важно, что думают другие",
+            "type": "дар философа",
+            "imageURL": "https://images.pexels.com/photos/7884599/pexels-photo-7884599.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 31,
+            "text": "обожаю проводить время и просто гулять с друзьями",
+            "type": "гений коммуникаций",
+            "imageURL": "https://images.pexels.com/photos/4881606/pexels-photo-4881606.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 32,
+            "text": "мне нравится порядок в вещах, чтобы все было разложено по категориям",
+            "type": "логико-математические способности",
+            "imageURL": "https://images.pexels.com/photos/256559/pexels-photo-256559.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 33,
+            "text": "мне нравится работать руками - шить, чинить, мастерить, готовить",
+            "type": "телесно-кинестетический талант",
+            "imageURL": "https://images.pexels.com/photos/5302906/pexels-photo-5302906.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 34,
+            "text": "мне нравится узнавать значение незнакомых слов",
+            "type": "лингвистические таланты",
+            "imageURL": "https://images.pexels.com/photos/267669/pexels-photo-267669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        {
+            "number": 35,
+            "text": "обожаю решать задачи, используя разные навыки и инструменты",
+            "type": "логико-математические способности",
+            "imageURL": "https://images.pexels.com/photos/2097/desk-office-pen-ruler.jpg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 36,
+            "text": "я слышу музыку в моей голове",
+            "type": "музыкальные способности",
+            "imageURL": "https://images.pexels.com/photos/1885213/pexels-photo-1885213.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 37,
+            "text": "я много жестикулирую, когда говорю",
+            "type": "телесно-кинестетический талант",
+            "imageURL": "https://images.pexels.com/photos/13929264/pexels-photo-13929264.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 38,
+            "text": "я легко завожу друзей",
+            "type": "гений коммуникаций",
+            "imageURL": "https://images.pexels.com/photos/4911253/pexels-photo-4911253.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 39,
+            "text": "у меня большой словарный запас",
+            "type": "лингвистические таланты",
+            "imageURL": "https://images.pexels.com/photos/1309899/pexels-photo-1309899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        {
+            "number": 40,
+            "text": "я постоянно что-то рисую, делаю наброски",
+            "type": "талант художника",
+            "imageURL": "https://images.pexels.com/photos/3778179/pexels-photo-3778179.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 41,
+            "text": "я умею распознавать и принимать свои чувства",
+            "type": "дар философа",
+            "imageURL": "https://images.pexels.com/photos/3812743/pexels-photo-3812743.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 42,
+            "text": "люблю походы в зоопарк или заповедник",
+            "type": "понимание природы",
+            "imageURL": "https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 43,
+            "text": "обожаю выступать перед аудиторией",
+            "type": "гений коммуникаций",
+            "imageURL": "https://images.pexels.com/photos/2728555/pexels-photo-2728555.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 44,
+            "text": "мне нравится делать фотографии, у меня это получается",
+            "type": "талант художника",
+            "imageURL": "https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 45,
+            "text": "всегда чувствую ритм в музыке",
+            "type": "музыкальные способности",
+            "imageURL": "https://images.pexels.com/photos/10509940/pexels-photo-10509940.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 46,
+            "text": "мне нравится готовить и угощать других",
+            "type": "телесно-кинестетический талант",
+            "imageURL": "https://images.pexels.com/photos/4262010/pexels-photo-4262010.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "number": 47,
+            "text": "всегда хотел иметь домашнего питомца",
+            "type": "понимание природы",
+            "imageURL": "https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "title": "¿Quién soy?",
+    "subtitle": "Tres pasos para elegir una profesión",
+    "list": {
+        "1": {
+            "normal": "Realiza el test",
+            "bolder": "en 10 minutos"
+        },
+        "2": "Recibe recomendaciones personalizadas",
+        "3": "Consulta con un especialista"
+    },
+    "start": "Comenzar el test"
+}
