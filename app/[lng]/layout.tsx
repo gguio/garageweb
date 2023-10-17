@@ -6,10 +6,8 @@ import { languages } from "../i18n/settings";
 
 import GlobalContextProvider from "../globalContext";
 
-export async function generateStaticPaths() {
-    return languages.map((lng) => ({
-        params: { lng },
-    }));
+export async function generateStaticParams() {
+    return languages.map((lng) => ({ params: { lng } }));
 }
 
 export const metadata: Metadata = {
