@@ -371,6 +371,7 @@ export default function TestPage({ params }: { params: RootLayoutParams }) {
                 setDataForTest(currData.current);
                 // redirect to result page
                 router.replace(`/${params.lng}/resultPage`);
+                return;
             }
 
             setQuestNumber((prev) => prev + 1);
