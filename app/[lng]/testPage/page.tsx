@@ -297,7 +297,7 @@ export default function TestPage({ params }: { params: RootLayoutParams }) {
     const router = useRouter();
 
     const { dataForTest, setDataForTest } = useContext(GlobalContext);
-    const currData = useRef(dataForTest);
+    const currData = useRef(dataForTest.concat());
     console.log("main render");
 
     // on page load : set localization, set data for test
