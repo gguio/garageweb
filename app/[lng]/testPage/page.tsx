@@ -367,7 +367,6 @@ export default function TestPage({ params }: { params: RootLayoutParams }) {
             }
             if (questNumber >= dataForTest.length - 1) {
                 // set dataForTest
-                currData.current[questNumber].value = currValue;
                 setDataForTest(currData.current);
                 // redirect to result page
                 router.replace(`/${params.lng}/resultPage`);
@@ -392,7 +391,7 @@ export default function TestPage({ params }: { params: RootLayoutParams }) {
             <div className={styles.progressBarTitle}>
                 {local.questionsNumber} {questNumber}
                 {" ("}
-                {dataForTest.length}
+                {dataForTest.length - 1}
                 {")"}
             </div>
             <ProgressBar
@@ -408,7 +407,6 @@ export default function TestPage({ params }: { params: RootLayoutParams }) {
                     }
                     if (questNumber >= dataForTest.length - 1) {
                         // set dataForTest
-                        currData.current[questNumber].value = currValue;
                         setDataForTest(currData.current);
                         // redirect to result page
                         router.replace(`/${params.lng}/resultPage`);
