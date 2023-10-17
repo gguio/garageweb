@@ -36,6 +36,7 @@ import Philosophy from "@/public/resultPage/philosophy.svg";
 import SadFace from "@/public/resultPage/sad_face.svg";
 import HappyFace from "@/public/resultPage/happy_face.svg";
 import { RootLayoutParams } from "../layout";
+import Link from "next/link";
 
 const ProgressBar = ({
     questNumber,
@@ -224,11 +225,19 @@ export default function ResultPage({ params }: { params: RootLayoutParams }) {
                 {" "}
                 {localStrings.button1.toUpperCase()}
             </Button>
-
-            <Button styleContainer={{ marginTop: 12 }}>
-                {localStrings.button2.toUpperCase()}
-            </Button>
-
+            <Link
+                style={{
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                }}
+                href="https://garagetesla.com/en"
+            >
+                <Button styleContainer={{ marginTop: 12 }}>
+                    {" "}
+                    {localStrings.button2.toUpperCase()}
+                </Button>
+            </Link>
             {/* You will need to replace FullResult with your own implementation */}
             {/* <FullResult
                 strings={strings}
