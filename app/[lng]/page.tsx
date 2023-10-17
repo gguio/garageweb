@@ -52,7 +52,7 @@ export default async function Home({ params }: { params: RootLayoutParams }) {
                     </Button>
                 </div>
                 <div className={styles.right}>
-                    <Image src={Laptop} alt="" />
+                    <Image className={styles.image} src={Laptop} alt="" />
                 </div>
             </div>
 

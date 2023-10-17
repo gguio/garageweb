@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import Image from "next/image";
@@ -352,40 +353,45 @@ export default function TestPage({ params }: { params: RootLayoutParams }) {
         tempData.slice(1);
         setDataForTest(tempData);
 
-        const keyDownHandlerNext = (event: KeyboardEvent) => {
-            console.log("User pressed: ", event.key);
-
-            if (event.key === "Enter") {
-                event.preventDefault();
-
-                if (currValue < 0) {
-                    return;
-                }
-                setQuestNumber((prev) => prev + 1);
-                setCurrValue(-1);
-                // set value for current question
-                currData.current[questNumber].value = currValue;
-                // if last question
-                if (questNumber >= dataForTest.length - 2) {
-                    // set dataForTest
-                    setDataForTest(currData.current);
-                    // redirect to result page
-                    router.replace(`/${params.lng}/resultPage`);
-                }
-            }
-        };
-
-        document.addEventListener("keydown", keyDownHandlerNext);
-
-        return () => {
-            document.removeEventListener("keydown", keyDownHandlerNext);
-        };
-
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
+    const keyDownHandlerNext = (event: KeyboardEvent) => {
+        console.log("User pressed: ", event.key);
+
+        if (event.key === "Enter") {
+            event.preventDefault();
+
+            if (currValue < 0) {
+                return;
+            }
+            setQuestNumber((prev) => prev + 1);
+            setCurrValue(-1);
+            // set value for current question
+            currData.current[questNumber].value = currValue;
+            // if last question
+            if (questNumber >= dataForTest.length - 2) {
+                // set dataForTest
+                setDataForTest(currData.current);
+                // redirect to result page
+                router.replace(`/${params.lng}/resultPage`);
+            }
+        }
+    };
+
     return (
-        <main className={styles.main}>
+        <main
+            onKeyDown={(e) => {
+                keyDownHandlerNext;
+            }}
+            className={styles.main}
+        >
+            <div className={styles.progressBarTitle}>
+                {local.questionsNumber} {questNumber}
+                {" ("}
+                {dataForTest.length}
+                {")"}
+            </div>
             <ProgressBar
                 questNumber={questNumber}
                 dataLength={dataForTest.length}
@@ -402,7 +408,7 @@ export default function TestPage({ params }: { params: RootLayoutParams }) {
                     // set value for current question
                     currData.current[questNumber].value = currValue;
                     // if last question
-                    if (questNumber >= dataForTest.length - 2) {
+                    if (questNumber >= dataForTest.length - 1) {
                         // set dataForTest
                         setDataForTest(currData.current);
                         // redirect to result page

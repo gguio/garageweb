@@ -1,6 +1,5 @@
 .main {
-    width: 60%;
-    max-width: 600px;
+    width: 600px;
 
     margin: auto;
 
@@ -12,6 +11,20 @@
     min-height: 100vh;
 
     background-color: var(--secondary);
+}
+
+@media (max-width: 600px) {
+    .main {
+        padding-inline: 2rem;
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main {
+        padding-inline: 0;
+        width: 270px;
+    }
 }
 
 .progressBarTitle {
@@ -61,6 +74,13 @@
 
     position: relative;
     isolation: isolate;
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 270px;
+        min-height: 400px;
+    }
 }
 
 .card__imgOuterContainer {
@@ -140,6 +160,12 @@
     font-weight: 700;
     text-align: center;
     line-height: 0.9;
+}
+
+@media (max-width: 400px) {
+    .card__title {
+        font-size: 26px;
+    }
 }
 
 .card__subtitle {
