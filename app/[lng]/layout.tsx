@@ -7,10 +7,9 @@ import { languages } from "../i18n/settings";
 import GlobalContextProvider from "../globalContext";
 
 export async function generateStaticPaths() {
-    return {
-        paths: languages.map((lng) => ({ params: { lng } })),
-        fallback: "blocking",
-    };
+    return languages.map((lng) => ({
+        params: { lng },
+    }));
 }
 
 export const metadata: Metadata = {
