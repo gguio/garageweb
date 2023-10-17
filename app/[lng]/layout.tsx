@@ -9,7 +9,7 @@ import GlobalContextProvider from "../globalContext";
 export async function generateStaticPaths() {
     return {
         paths: languages.map((lng) => ({ params: { lng } })),
-        fallback: false,
+        fallback: "blocking",
     };
 }
 

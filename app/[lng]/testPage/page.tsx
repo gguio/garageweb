@@ -73,10 +73,12 @@ const Card = ({ quest }: { quest: Question }) => {
 // estimator
 const Estimator = ({
     currValue,
-    setCurrValue,
+    goNext,
+    setGoNext,
 }: {
-    currValue: number;
-    setCurrValue: Function;
+    currValue: React.MutableRefObject<number>;
+    goNext: boolean;
+    setGoNext: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
     const [xOffset, setXOffset] = useState(5);
     const [mousePressed, setMousePressed] = useState(false);
@@ -85,10 +87,10 @@ const Estimator = ({
     const contRef = useRef(null);
 
     useEffect(() => {
-        if (currValue < 0) {
+        if (!goNext) {
             setXOffset(5);
         }
-    }, [currValue]);
+    }, [goNext]);
 
     useEffect(() => {
         const keyDownHandler = (event: KeyboardEvent) => {
@@ -101,7 +103,8 @@ const Estimator = ({
 
                 offset += 1;
 
-                setCurrValue(value);
+                currValue.current = value;
+                setGoNext(true);
                 setXOffset(offset);
             } else if (event.key === "2") {
                 event.preventDefault();
@@ -112,7 +115,8 @@ const Estimator = ({
 
                 offset += 1;
 
-                setCurrValue(value);
+                currValue.current = value;
+                setGoNext(true);
                 setXOffset(offset);
             } else if (event.key === "3") {
                 event.preventDefault();
@@ -121,7 +125,8 @@ const Estimator = ({
                 const width = (contRef.current as any).offsetWidth - 5;
                 let offset = (value / 7) * width;
 
-                setCurrValue(value);
+                currValue.current = value;
+                setGoNext(true);
                 setXOffset(offset);
             } else if (event.key === "4") {
                 event.preventDefault();
@@ -130,7 +135,8 @@ const Estimator = ({
                 const width = (contRef.current as any).offsetWidth - 5;
                 let offset = (value / 7) * width;
 
-                setCurrValue(value);
+                currValue.current = value;
+                setGoNext(true);
                 setXOffset(offset);
             } else if (event.key === "5") {
                 event.preventDefault();
@@ -139,7 +145,8 @@ const Estimator = ({
                 const width = (contRef.current as any).offsetWidth - 5;
                 let offset = (value / 7) * width;
 
-                setCurrValue(value);
+                currValue.current = value;
+                setGoNext(true);
                 setXOffset(offset);
             } else if (event.key === "6") {
                 event.preventDefault();
@@ -148,7 +155,8 @@ const Estimator = ({
                 const width = (contRef.current as any).offsetWidth - 5;
                 let offset = (value / 7) * width;
 
-                setCurrValue(value);
+                currValue.current = value;
+                setGoNext(true);
                 setXOffset(offset);
             }
         };
@@ -178,7 +186,8 @@ const Estimator = ({
                 offset = width - 5;
             }
 
-            setCurrValue(value);
+            currValue.current = value;
+            setGoNext(true);
             setXOffset(offset);
         }
     };
@@ -209,7 +218,7 @@ const Estimator = ({
             <div
                 className={styles.estimator__value}
                 style={{
-                    backgroundColor: currValue < 0 ? "#29A9FF" : "#FFD243",
+                    backgroundColor: !goNext ? "#29A9FF" : "#FFD243",
                 }}
                 ref={boxRef}
             ></div>
@@ -217,14 +226,14 @@ const Estimator = ({
                 <Arrow
                     width={30}
                     height={20}
-                    currentcolor={currValue >= 0 ? "#E8E8E8" : "black"}
+                    currentcolor={goNext ? "#E8E8E8" : "black"}
                 />
             </div>
             <div className={styles.estimator__block}>
                 <div
                     className={styles.estimator__text}
                     style={{
-                        color: currValue < 0 ? "#D1D3D4" : "#29A9FF",
+                        color: !goNext ? "#D1D3D4" : "#29A9FF",
                     }}
                 >
                     1
@@ -235,7 +244,7 @@ const Estimator = ({
                 <div
                     className={styles.estimator__text}
                     style={{
-                        color: currValue < 0 ? "#D1D3D4" : "#29A9FF",
+                        color: !goNext ? "#D1D3D4" : "#29A9FF",
                     }}
                 >
                     2
@@ -246,7 +255,7 @@ const Estimator = ({
                 <div
                     className={styles.estimator__text}
                     style={{
-                        color: currValue < 0 ? "#D1D3D4" : "#29A9FF",
+                        color: !goNext ? "#D1D3D4" : "#29A9FF",
                     }}
                 >
                     3
@@ -257,7 +266,7 @@ const Estimator = ({
                 <div
                     className={styles.estimator__text}
                     style={{
-                        color: currValue < 0 ? "#D1D3D4" : "#29A9FF",
+                        color: !goNext ? "#D1D3D4" : "#29A9FF",
                     }}
                 >
                     4
@@ -268,7 +277,7 @@ const Estimator = ({
                 <div
                     className={styles.estimator__text}
                     style={{
-                        color: currValue < 0 ? "#D1D3D4" : "#29A9FF",
+                        color: !goNext ? "#D1D3D4" : "#29A9FF",
                     }}
                 >
                     5
@@ -279,7 +288,7 @@ const Estimator = ({
                 <div
                     className={styles.estimator__text}
                     style={{
-                        color: currValue < 0 ? "#D1D3D4" : "#29A9FF",
+                        color: !goNext ? "#D1D3D4" : "#29A9FF",
                     }}
                 >
                     6
@@ -292,12 +301,13 @@ const Estimator = ({
 export default function TestPage({ params }: { params: RootLayoutParams }) {
     const [local, setLocal] = useState({} as any);
     const [questNumber, setQuestNumber] = useState(0);
-    const [currValue, setCurrValue] = useState(-1);
+    const [goNext, setGoNext] = useState(false);
 
     const router = useRouter();
 
     const { dataForTest, setDataForTest } = useContext(GlobalContext);
-    const currData = useRef(dataForTest.concat());
+    const currValue = useRef(-1);
+    const currData = useRef(dataForTest);
     console.log("main render");
 
     // on page load : set localization, set data for test
@@ -362,23 +372,27 @@ export default function TestPage({ params }: { params: RootLayoutParams }) {
         if (event.key === "Enter") {
             event.preventDefault();
 
-            if (currValue < 0) {
-                return;
-            }
-            if (questNumber >= dataForTest.length - 1) {
-                // set dataForTest
-                setDataForTest(currData.current);
-                // redirect to result page
-                router.replace(`/${params.lng}/resultPage`);
-                return;
-            }
-
-            setQuestNumber((prev) => prev + 1);
-            setCurrValue(-1);
-            // set value for current question
-            currData.current[questNumber].value = currValue;
-            // if last question
+            goNextHandler();
         }
+    };
+
+    const goNextHandler = () => {
+        if (!goNext) {
+            return;
+        }
+        if (questNumber >= dataForTest.length - 1) {
+            // set dataForTest
+            setDataForTest(currData.current);
+            // redirect to result page
+            router.replace(`/${params.lng}/resultPage`);
+            return;
+        }
+
+        currData.current[questNumber].value = currValue.current;
+        setQuestNumber((prev) => prev + 1);
+        currValue.current = -1;
+        setGoNext(false);
+        // set value for current question
     };
 
     return (
@@ -399,26 +413,17 @@ export default function TestPage({ params }: { params: RootLayoutParams }) {
                 dataLength={dataForTest.length}
             />
             <Card quest={dataForTest[questNumber] as Question} />
-            <Estimator setCurrValue={setCurrValue} currValue={currValue} />
+            <Estimator
+                currValue={currValue}
+                goNext={goNext}
+                setGoNext={setGoNext}
+            />
             <Button
                 onClick={() => {
-                    if (currValue < 0) {
-                        return;
-                    }
-                    if (questNumber >= dataForTest.length - 1) {
-                        // set dataForTest
-                        setDataForTest(currData.current);
-                        // redirect to result page
-                        router.replace(`/${params.lng}/resultPage`);
-                        return;
-                    }
-                    setQuestNumber((prev) => prev + 1);
-                    setCurrValue(-1);
-                    // set value for current question
-                    currData.current[questNumber].value = currValue;
+                    goNextHandler();
                 }}
                 style={
-                    currValue < 0
+                    !goNext
                         ? {
                               backgroundColor: "#E8E8E8",
                               transform: "translateY(10px)",
