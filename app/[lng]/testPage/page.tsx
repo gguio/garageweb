@@ -49,17 +49,15 @@ const Card = ({ quest }: { quest: Question }) => {
             {/* image */}
             <div className={styles.card__imgOuterContainer}>
                 <div className={styles.card__imageContainer}>
-                    <Image
+                    <img
                         className={styles.card__image}
-                        fill={true}
                         src={quest.imageURL}
                         alt=""
                     />
                 </div>
                 <div className={styles.card__imageContainerClone}>
-                    <Image
+                    <img
                         className={styles.card__imageClone}
-                        fill={true}
                         src={quest.imageURL}
                         alt=""
                     />
