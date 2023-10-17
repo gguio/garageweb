@@ -365,17 +365,19 @@ export default function TestPage({ params }: { params: RootLayoutParams }) {
             if (currValue < 0) {
                 return;
             }
+            if (questNumber >= dataForTest.length - 1) {
+                // set dataForTest
+                currData.current[questNumber].value = currValue;
+                setDataForTest(currData.current);
+                // redirect to result page
+                router.replace(`/${params.lng}/resultPage`);
+            }
+
             setQuestNumber((prev) => prev + 1);
             setCurrValue(-1);
             // set value for current question
             currData.current[questNumber].value = currValue;
             // if last question
-            if (questNumber >= dataForTest.length - 1) {
-                // set dataForTest
-                setDataForTest(currData.current);
-                // redirect to result page
-                router.replace(`/${params.lng}/resultPage`);
-            }
         }
     };
 
