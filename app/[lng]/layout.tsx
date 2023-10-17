@@ -7,7 +7,7 @@ import { languages } from "../i18n/settings";
 import GlobalContextProvider from "../globalContext";
 
 export async function generateStaticParams() {
-    return languages.map((lng) => ({ lng }));
+    return { params: languages.map((lng) => ({ lng })), fallback: "blocking" };
 }
 
 export const metadata: Metadata = {
