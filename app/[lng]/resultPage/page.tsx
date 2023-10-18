@@ -2,26 +2,13 @@
 
 import Image from "next/image";
 
-import {
-    useContext,
-    useEffect,
-    useState,
-    useLayoutEffect,
-    useRef,
-    useMemo,
-} from "react";
+import { useContext, useEffect, useState } from "react";
 import { GlobalContext } from "@/app/globalContext";
-import type { Question } from "@/app/globalContext";
-
-import type { TFunction } from "i18next";
-import { useTranslation } from "@/app/i18n";
 
 import { CountResults } from "../components/CountResults/CountResults";
 
-import { gsap } from "gsap";
-import { ReactSVG } from "react-svg";
-
 import Button from "@/app/[lng]/components/Button";
+import ModalPage from "@/app/[lng]/components/ModalPage";
 
 import styles from "@/app/css/resultPage.module.css";
 import Artist from "@/public/resultPage/artist.svg";
@@ -67,6 +54,7 @@ export default function ResultPage({ params }: { params: RootLayoutParams }) {
         ...resultPage,
         svg: Artist,
     });
+    const [showModal, setShowModal] = useState(false);
 
     // on page load : count results, set local strings, set resultArray
     useEffect(() => {
@@ -215,6 +203,7 @@ export default function ResultPage({ params }: { params: RootLayoutParams }) {
             </div>
 
             <Button
+                onClick={() => setShowModal(true)}
                 classNameContainer={styles.buttonContainer}
                 classNameInner={styles.buttonInner}
                 styleContainer={{
@@ -238,16 +227,15 @@ export default function ResultPage({ params }: { params: RootLayoutParams }) {
                     {localStrings.button2.toUpperCase()}
                 </Button>
             </Link>
-            {/* You will need to replace FullResult with your own implementation */}
-            {/* <FullResult
-                strings={strings}
-                localStrings={localStrings}
-                modalVisible={modalVisible}
-                setModalVisible={setModalVisible}
-                width={width}
-                height={height}
-                resultArray={resultArray}
-            /> */}
+
+            {showModal && (
+                <ModalPage
+                    onClose={() => {
+                        setShowModal(false);
+                    }}
+                    lng={params.lng}
+                />
+            )}
         </div>
     );
 }

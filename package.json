@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "accept-language": "^3.0.18",
+        "firebase": "^10.5.0",
         "gsap": "^3.12.2",
         "i18next": "^23.5.1",
         "i18next-resources-to-backend": "^1.1.4",
